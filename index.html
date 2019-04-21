@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Ticket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:pink">
+
+<div class="container" style="text-align:center">
+<br><br><br><br>
+  <h2>Book your tickets now !!</h2>
+  <br>
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Choose Train
+    </button>
+    <div class="dropdown-menu">
+	  <div class="dropdown-header">PASSENGER TRAINS</div>
+      <a class="dropdown-item" href="#">001- TRAIN 1</a>
+      <a class="dropdown-item" href="#">002- TRAIN 2</a>
+      <a class="dropdown-item" href="#">003- TRAIN 3</a>
+	  <div class="dropdown-divider"></div>
+	  <div class="dropdown-header">EXPRESS TRAINS</div>
+      <a class="dropdown-item" href="#">101- TRAIN 1</a>
+      <a class="dropdown-item" href="#">102- TRAIN 2</a>
+      <a class="dropdown-item" href="#">103- TRAIN 3</a>
+	  <div class="dropdown-divider"></div>
+	  <div class="dropdown-header">SUPERFAST TRAINS</div>
+      <a class="dropdown-item" href="#">201- TRAIN 1</a>
+      <a class="dropdown-item" href="#">202- TRAIN 2</a>
+      <a class="dropdown-item" href="#">203- TRAIN 3</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Choose no. of Tickets
+    </button>
+    <div class="dropdown-menu">
+		<a class="dropdown-item" href="#">1</a>
+		<a class="dropdown-item" href="#">2</a>
+		<a class="dropdown-item" href="#">3</a>
+		<a class="dropdown-item" href="#">4</a>
+		<a class="dropdown-item" href="#">5</a>
+		<a class="dropdown-item" href="#">6</a>
+		<a class="dropdown-item" href="#">7</a>
+		<a class="dropdown-item" href="#">8</a>
+		<a class="dropdown-item" href="#">9</a>
+		<a class="dropdown-item" href="#">10</a>
+    </div>
+  </div>
+  <br><br>
+  
+  <div>
+  <form action="/action_page.php">
+    <label >CHOOSE TRAIN</label>
+    <select >
+      <option>001- TRAIN 1</option>
+	  <option>002- TRAIN 2</option>
+	  <option>003- TRAIN 3</option>
+	  <option>004- TRAIN 4</option>
+	  <option>005- TRAIN 5</option>
+	  <option>006- TRAIN 6</option>
+	  <option>007- TRAIN 7</option>
+	  <option>008- TRAIN 8</option>
+	  <option>009- TRAIN 9</option>
+	  <option>010- TRAIN 10</option>
+    </select>
+	<BR><BR>
+	 <label >CHOOSE NO. OF TICKETS</label>
+    <select >
+      <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	  <option>6</option>
+	  <option>7</option>
+	  <option>8</option>
+	  <option>9</option>
+	  <option>10</option>
+    </select>
+	<BR><BR>
+  </form>
+</div>
+   <button type="button" id="check" onclick="checker()" class="btn btn-primary">
+      Check Availability
+    </button>
+	<br>
+   <p id="available_seats"><br>
+   </p>
+	<script>
+		function checker()
+		{document.getElementById("available_seats").innerHTML = "THE AVAILABLE TICKETS ARE: var !!";}
+	</script>
+</div>
+
+</body>
+</html>
