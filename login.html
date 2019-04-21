@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+    <script src="../javascript/firebase.js"></script>
+    <script src="../javascript/logn.js"></script>
 </head>
 <body style="background-color:pink">
-<br><br><br><br><br><br><br><br><br>
-<div class="container" style="text-align:center">
-</br></br>
-  <h2>Login Page</h2>
-  </br>
-    <button type="submit" class="btn btn-primary">Login With Google</button>
-  </br></br>
-  <p>
-	<a href="#">New User? Register Now !!</a>
-  </p>
-</div>
-
-<script src="login.js"></script>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="container" style="text-align:center" data-onsuccess="onSignIn">
+        </br></br>
+        <h2>Login Page</h2>
+        </br>
+        <button type="submit" class="btn btn-primary" onclick="googleSignin()">Login With Google</button>
+        </br></br>
+        <p>
+            <a href="#">New User? Register Now !!</a>
+        </p>
+    </div>
+   
 
 </body>
 </html>
