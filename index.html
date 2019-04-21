@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Ticket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="index.js"></script>
+   <script src="booking.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="booking.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:powderblue;text-align:center">
+
+<div class="container-fluid" align="center">
+<br><br><br><br>
+  <h2>Book your tickets now !!</h2>
+  <br>
+
+  <div>
+  <form action="/action_page.php">
+    <label >CHOOSE TRAIN</label>
+    <select >
+      <option>001- TRAIN 1</option>
+	  <option>002- TRAIN 2</option>
+	  <option>003- TRAIN 3</option>
+	  <option>004- TRAIN 4</option>
+	  <option>005- TRAIN 5</option>
+	  <option>006- TRAIN 6</option>
+	  <option>007- TRAIN 7</option>
+	  <option>008- TRAIN 8</option>
+	  <option>009- TRAIN 9</option>
+	  <option>010- TRAIN 10</option>
+    </select>
+	<BR><BR>
+	 <label >CHOOSE NO. OF TICKETS</label>
+    <select >
+      <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	  <option>6</option>
+	  <option>7</option>
+	  <option>8</option>
+	  <option>9</option>
+	  <option>10</option>
+    </select>
+	<BR><BR>
+  </form>
+</div>
+   <button type="button" id="check" onclick="checker()" class="btn btn-primary">
+      Check Availability
+    </button>
+	
+	<br>
+   <p id="available_seats"><br></p>
+	
+	<form action="history.html" id="mainform" method="get" name="mainform">
+   <button type="button" id="check" onclick="add()" class="btn btn-primary">
+      ADD USER
+    </button><br>
+<span id="myForm"></span>
+
+<input type="submit" value="Submit" class="btn btn-primary">
+</form>
+	<br>
+</div>
+
+</body>
+</html>
